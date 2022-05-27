@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+<fields name="attribs">
+    <fieldset name="extra-fields" label="TPL_GROUP_EXTRA_FIELDS_LABEL" description="" group="extrafields">
+	    <field name="person" type="text" label="TPL_PERSON_LABEL" description="TPL_PERSON_DESC"/>
+	    <field name="day" type="text" label="TPL_DAY_LABEL" description="TPL_DAY_DESC"/>
+	    <field name="price" type="text" label="TPL_PRICE_LABEL" description="TPL_PRICE_DESC"/>
+
+	    <field name="map-option" type="list" label="TPL_TARGET_ENABLE_MAP_LABEL" description="TPL_TARGET_ENABLE_MAP_DESC">
+	    	<option value="0">JNO</option>
+	    	<option value="1">JYES</option>
+	    </field>
+
+	    <field name="location" type="text" label="TPL_LOCATION_LABEL" description="TPL_LOCATION_DESC"/>
+	    
+			<field name="map-lat" showon="map-option:1" type="text" label="TPL_TARGET_LAT_LABEL" description="TPL_TARGET_LAT_DESC"/>
+
+			<field name="map-lon" showon="map-option:1" type="text" label="TPL_TARGET_LON_LABEL" description="TPL_TARGET_LON_DESC"/>
+
+			<field name="map-info" showon="map-option:1" type="text" label="TPL_TARGET_LOCATION_INFO_LABEL" description="TPL_TARGET_LOCATION_INFO_DESC"/>
+
+	    <field
+				name="tour-plan"
+				type="subform"
+				label="TPL_TOUR_PLAN"
+				description="TPL_TOUR_PLAN_DESC"
+				layout="joomla.form.field.subform.repeatable-table"
+				icon="list"
+				multiple="true"
+				class="no-row"
+				>
+				<form hidden="true" name="list-info-plan" repeat="true">
+					<field
+						name="plan_day"
+						type="text"
+						label="TPL_TOUR_PLAN_DAY_LABEL"
+						description="TPL_TOUR_PLAN_DAY_DESC"
+						hint="Day 1"
+					/>
+
+					<field
+						name="plan_info"
+						type="textarea"
+						label="TPL_TOUR_PLAN_INFO_LABEL"
+						description="TPL_TOUR_PLAN_INFO_DESC"
+						filter="safehtml"
+					/>
+					
+					<field
+						name="image_one"
+						type="media"
+						label="TPL_TOUR_PLAN_IMAGE_ONE"
+						description="TPL_TOUR_PLAN_IMAGE_ONE"
+					/>
+					
+					<field
+						name="image_two"
+						type="media"
+						label="TPL_TOUR_PLAN_IMAGE_ONE"
+						description="TPL_TOUR_PLAN_IMAGE_ONE"
+					/>	
+					
+					<field
+						name="image_three"
+						type="media"
+						label="TPL_TOUR_PLAN_IMAGE_ONE"
+						description="TPL_TOUR_PLAN_IMAGE_ONE"
+					/>	
+				</form>
+			</field>
+    </fieldset>
+
+    <fieldset name="extra-fields-2" label="TPL_TOUR_GALLERY_LABEL" description="" group="extrafields">
+    	<!-- TOUR GALLERY -->
+			<field name="gallery-title" type="text" label="TPL_GALLERY_TITLE" description="TPL_GALLERY_TITLE_DESC"/>
+	    <field name="gallery-desc" type="text" label="TPL_GALLERY_DESC" description="TPL_GALLERY_DESC_DESC"/>
+
+			<field
+				name="tour-gallery"
+				type="subform"
+				label="TPL_TOUR_GALLERY_OPTIONS"
+				description="TPL_TOUR_GALLERY_OPTIONS_DESC"
+				layout="joomla.form.field.subform.repeatable-table"
+				icon="list"
+				multiple="true"
+				class="no-row"
+				>
+				<form hidden="true" name="list-info-tour" repeat="true">
+					<field
+						name="gallery_img"
+						type="media"
+						label="TPL_TOUR_GALLERY_IMAGE_LABEL"
+						description="TPL_TOUR_GALLERY_IMAGE_DESC"
+					/>
+
+					<field
+						name="gallery_alt"
+						type="text"
+						label="TPL_TOUR_GALLERY_IMAGE_ALT_LABEL"
+						description="TPL_TOUR_GALLERY_ALT_IMAGE_DESC"
+					/>				
+				</form>
+			</field>
+    </fieldset>
+</fields>
+</form>

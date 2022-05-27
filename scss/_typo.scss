@@ -1,0 +1,371 @@
+// ------------------------------------
+// Ovveride of BS "type.scss".
+// Leave blank to use default styles
+// ------------------------------------
+
+//
+// Headings
+//
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+
+  small,
+  .small {
+    font-weight: normal;
+    line-height: 1;
+  }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  margin-top: $spacer;
+  margin-bottom: ($spacer / 2);
+
+  small,
+  .small {
+    font-size: 65%;
+  }
+}
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: ($spacer / 2);
+  margin-bottom: ($spacer / 2); 
+
+  small,
+  .small {
+    font-size: 75%;
+  }
+}
+
+h1, .h1 {
+  line-height: $h1-line-height;
+  font-size: $h1-font-size;
+}
+
+h2, .h2 {
+  line-height: $h2-line-height;
+  font-size: $h2-font-size;
+}
+
+h3, .h3 {
+  line-height: $h3-line-height;
+  font-size: $h3-font-size;
+}
+
+h4, .h4 {
+  line-height: $h4-line-height;
+  font-size: $h4-font-size;
+}
+
+h5, .h5 {
+  line-height: $h5-line-height;
+  font-size: $h5-font-size;
+}
+
+h6, .h6 {
+  line-height: $h6-line-height;
+  font-size: $h6-font-size;
+}
+
+.text-xs-small {
+  // Mobile view
+  @include media-breakpoint-down(lg) {
+    font-size: $h3-font-size!important;
+  }
+}
+
+.lead {
+}
+
+// Type display classes
+.display-1 {
+}
+
+.display-2 {
+}
+
+.display-3 {
+}
+
+.display-4 {
+}
+
+//
+// Horizontal rules
+//
+hr {
+}
+
+
+//
+// Emphasis
+//
+small,
+.small {
+  font-size: $font-size-sm;
+  font-weight: $font-weight-normal;
+}
+
+mark,
+.mark {
+}
+
+b, strong {
+  color: $headings-color;
+}
+
+//
+// Image
+//
+.img-rounded {
+  border-radius: 5px;
+}
+
+//
+// Extra button class
+//
+.btn-border {
+  border: 2px solid rgba($white, 0.2);
+}
+
+
+//
+// Lists
+//
+.list-unstyled {
+}
+
+.list-features {
+  border: 1px solid $border-color;
+  margin: $grid-gutter-width 0;
+
+  .features-item {
+    display: flex;
+    padding: 17px 40px;
+
+    + .features-item {
+      border-top: 1px solid $border-color;
+    }
+
+    // Label
+    .label-features {
+      color: $headings-color;
+      font-weight: 600;
+      flex: 40% 0 0;
+    }
+  }
+}
+
+.list-check {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    margin-right: $grid-gutter-width;
+
+    &:before {
+      color: #12E48C;
+      content: "\f00c";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 700;
+      margin-right: 8px;
+    }
+
+    &.no-support:before {
+      content: "\f00d";
+      color: #F6376A;
+    }
+  }
+}
+// Inline turns list items into inline-block
+.list-inline {
+}
+
+.list-inline-item {
+}
+
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+// Alert message
+.alert-error {
+  @extend .alert-danger;
+}
+
+//
+// Misc
+//
+// Builds on `abbr`
+.initialism {
+}
+
+// Blockquotes
+.blockquote {
+}
+
+.blockquote-footer {
+}
+
+// Font weight
+.fw-thin      { font-weight: 300; }
+.fw-semi-bold { font-weight: 500; }
+.fw-bold      { font-weight: 600; }
+
+.fs-xs   { font-size: ($font-size-base * .725); }
+.fs-sm   { font-size: ($font-size-base * .875); }
+.fs-base  { font-size: $font-size-base; }
+.fs-lg    { font-size: ($font-size-base * 1.25); } 
+
+
+
+// Play Icon Effect
+.play-icon {
+  a {
+    background: $white;
+    align-items: center;
+    border-radius: 50%;
+    color: $red!important;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    position: relative;
+    text-indent: 3px;
+    height: 120px;
+    width: 120px;
+
+    &:before,
+    &:after {
+      border: 1px solid $white;
+      content: "";
+      position: absolute;
+      z-index: 0;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      display: block;
+      width: 120px;
+      height: 120px;
+      background: transparent;
+      border-radius: 50%;
+      animation: pulse-border 2200ms ease-out infinite;
+    }
+
+    &:after {
+      animation-delay: 600ms;
+
+      //Error IE
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        display: none;
+      }
+    }
+
+    &:hover {
+      background: $gray-100;
+      text-decoration: none;
+    }
+
+    // Mobile view
+    @include media-breakpoint-down(sm) {
+      height: 80px;
+      width: 80px;
+
+      &:before,
+      &:after {
+        height: 80px;
+        width: 80px;
+      }
+    }
+  }
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.3);
+    opacity: 0;
+  }
+}
+
+
+//
+// Dark background
+// ----------------------
+.t4-section.sec-bg-dark {
+  // Feature list
+  .features-list {
+    .card {
+      background-color: rgba($black, .1);
+    }
+
+    .icon {
+      background-color: rgba($black, .15);
+    }
+
+    .item {
+      .icon {
+        i {
+          color: rgba($white, .4);
+        } 
+      }
+    }
+  }
+
+  .testimonial-block {
+    background-color: rgba($black, .1);
+
+    &:after {
+      background: rgba($white, .1);
+    }
+  }
+}
+
+
+
+//
+// Pre code
+pre {
+  background-color: $gray-100;
+  border-radius: 3px;
+  font-family: Consolas, monospace;
+  padding: $spacer/2 $spacer;
+}
+
+
+
+// Social list
+// ---------------------------------
+.social-list {
+  @include socials-list(32px, 32px);
+}
+
+.social-list-sm {
+  @include socials-list(20px, 20px, transparent, $white);
+}
+
+.social-list-lg {
+  @include socials-list(48px, 48px);
+}
+
+ 
+// ---------------------------------
+// CUSTOM STYLE FOR EXAMPLE PAGE
+// ---------------------------------

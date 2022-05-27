@@ -1,0 +1,186 @@
+/**
+ *------------------------------------------------------------------------------
+ * @package       T4_Blank - Free Template for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2019 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt
+ *------------------------------------------------------------------------------
+**/
+.fa, .fab, .fal, .far, .fas {
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1); }
+
+html[dir="rtl"] .fa-angle-double-left:before {
+  content: "\f101"; }
+
+html[dir="rtl"] .fa-angle-left:before {
+  content: "\f105"; }
+
+html[dir="rtl"] .fa-angle-double-right:before {
+  content: "\f100"; }
+
+html[dir="rtl"] .fa-angle-right:before {
+  content: "\f104"; }
+
+.owl-stage-outer {
+  direction: ltr; }
+  .owl-stage-outer .owl-stage {
+    direction: rtl; }
+
+.contact .contact-info .contact-address .wrap-info .fa {
+  text-align: left; }
+
+.finder #finder-filter-window .filter-branch {
+  float: right; }
+
+.finder #finder-filter-select-dates .filter-date {
+  float: right;
+  text-align: right; }
+
+.finder #finder-filter-select-dates .filter-date-operator {
+  margin-right: 0 !important; }
+
+#member-profile legend {
+  text-align: right; }
+
+#member-profile .control-group [class^="col-"], #member-profile .control-group [class*=" col-"] {
+  text-align: right; }
+
+#mailto-window .controls input {
+  text-align: right; }
+
+#mailto-window #consentbox .form-check-input {
+  float: right; }
+
+#member-profile .control-group .chzn-container .chzn-drop {
+  right: -9999px;
+  left: auto !important; }
+  #member-profile .control-group .chzn-container .chzn-drop .chzn-search {
+    position: static; }
+
+#member-profile .control-group .chzn-container.chzn-with-drop .chzn-drop {
+  right: 0; }
+
+.contentpane .article-info {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.owl-carousel,
+.bx-wrapper {
+  direction: ltr; }
+
+.owl-carousel .owl-item {
+  direction: rtl; }
+
+.com_vikbooking .vbo-operators-login-wrap .vbo-operators-authcode {
+  margin-left: 15px; }
+
+.com_vikbooking .vbo-operators-login-wrap .loginblock {
+  margin-right: 15px; }
+
+.com_vikbooking .vborderslisttable tr td {
+  text-align: right; }
+
+.com_vikbooking .vbo-availability-room-container .vbo-availability-room-details .vbo-availability-room-details-first {
+  float: right;
+  border-right: 1px solid #F4F4F4; }
+  .com_vikbooking .vbo-availability-room-container .vbo-availability-room-details .vbo-availability-room-details-first .vbo-availability-room-details-left {
+    float: right;
+    margin: 0 0 0 30px; }
+    .com_vikbooking .vbo-availability-room-container .vbo-availability-room-details .vbo-availability-room-details-first .vbo-availability-room-details-left img {
+      margin: 0; }
+
+.vbdivsearch .vb-search-inner .vbo-search-inpblock {
+  margin-right: 0;
+  margin-left: 10px; }
+
+.vbdivsearch .vb-search-inner .vbo-search-num-racblock .vbo-search-num-adults-entry {
+  margin-right: 0;
+  margin-left: 15px; }
+
+.vbrdetboxtop .vblistroomnamediv .vblistroomcat:before {
+  margin-left: 10px;
+  margin-right: 0; }
+
+.vbrdetboxtop .vbroomimgdesc img {
+  margin-right: 0; }
+
+.vbrdetboxtop .room_carats > h3 {
+  float: right;
+  width: 100%;
+  margin-right: 0 !important; }
+
+.vbo-room-details-booking-wrapper .vbdivsearch {
+  width: 100%;
+  float: right; }
+  .vbo-room-details-booking-wrapper .vbdivsearch .vb-search-inner > div {
+    float: right; }
+
+.vbo-pkgdet-topwrap .vbo-pkgdet-condsdates-block .vbo-pkgdet-conds {
+  text-align: right; }
+
+.vbo-pkgdet-room-container .vbo-pkgdet-room-thumbs-cont > div {
+  float: right; }
+
+.vbo-pkglist-pkg .vbo-pkglist-pkg-btwo {
+  border-left: 1px solid #F4F4F4; }
+
+.vbo-pkglist-pkg .vbo-pkglist-pkg-dates {
+  float: right !important; }
+
+.vbo-showprc-head-wrapper .vbo-results-head i {
+  margin: 10px 0 0 10px; }
+
+.vbo-showprc-head-wrapper .vbo-results-head .vbcheckinroom,
+.vbo-showprc-head-wrapper .vbo-results-head .vbcheckoutroom {
+  width: auto !important; }
+
+.vbo-showprc-room-head .vbo-showprc-staydetails {
+  float: right; }
+  .vbo-showprc-room-head .vbo-showprc-staydetails .vbo-showprc-staydetails-party {
+    margin-right: 0; }
+
+.vbo-showprc-room-block .vbroomimgdesc .vikfx-gallery-container {
+  margin-right: 0;
+  margin-left: 30px; }
+  .vbo-showprc-room-block .vbroomimgdesc .vikfx-gallery-container img {
+    margin: 0; }
+
+.vbo-showprc-price-entry .vbo-showprc-price-entry-radio,
+.vbo-showprc-price-entry .vbo-showprc-price-entry-rateplan {
+  float: right; }
+
+.vbo-oconfirm-cfield-entry-checkbox > div {
+  float: right !important; }
+
+.vbo-oconfirm-cfield-entry-checkbox .vbo-oconfirm-cfield-input {
+  margin-right: 8px; }
+
+.room_buttons_box .booknow,
+.vboconfirmbottom .booknow {
+  float: left; }
+
+.room_buttons_box .goback,
+.vboconfirmbottom .goback {
+  float: right; }
+
+div.vbmodhorsearchmaindiv form > div {
+  float: right !important;
+  margin-left: 20px;
+  margin-right: 0; }
+
+div.vbmodhorsearchmaindiv .vbmodhorsearchrac .horsanumsel select,
+div.vbmodhorsearchmaindiv .vbmodhorsearchrac .horscnumsel select,
+div.vbmodhorsearchmaindiv .vbhsrnselsp select,
+div.vbmodhorsearchmaindiv .vbhsrcselsp select,
+div.vbmodhorsearchmaindiv .vbmodhorsearchroomdentr .horsanumdiv select,
+div.vbmodhorsearchmaindiv .vbmodhorsearchroomdentr .horscnumdiv select,
+div.vbmodhorsearchmaindiv .vbmodhorsearchcategoriesblock select {
+  background-position: left .75rem center; }
+
+div.vbmodhorsearchmaindiv.vbo-horizsearch-standardformat-wrap .input-group input {
+  text-align: right;
+  padding-right: 45px !important; }

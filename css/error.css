@@ -1,0 +1,137 @@
+/** 
+ *------------------------------------------------------------------------------
+ * Signature TPL
+ *
+ *
+ * @package       T4_Blank - Free Template for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2016 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt
+ *------------------------------------------------------------------------------
+**/
+
+/* MAIN STYLE
+---------------------*/
+html {
+  font-size: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../images/bg-decor.png');
+  color: #696f8d;
+  font-family: 'Muli', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7333;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* OutLine */
+#outline {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+#errorboxoutline {
+  max-width: 100%;
+  width: 800px;
+}
+
+/* Eror Code */
+.error-code {
+  color: #4d5a64;
+  display: inline-block;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 20rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+/* Message Error */
+.error-message {
+}
+
+/* Message Error */
+.error-message h2 {
+  color: #4d5a64;
+  display: inline-block;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-top: 0;
+  position: relative;
+}
+
+.error-message h2 span {
+  position: relative;
+  z-index: 3;
+}
+
+#errorboxbody p {
+  display: block;
+  margin: 0 0 30px;
+  position: relative;
+  z-index: 3;
+}
+
+/* Button Home */
+.button-home {
+  background: #f68c05;
+  border: 1px solid #f68c05;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.7142;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button-home:hover,
+.button-home:focus,
+.button-home:active {
+  opacity: 0.9;
+}
+
+/*Mobile view*/
+@media (max-width: 767px) {
+  .error {
+  }
+
+  /* OutLine */
+  #outline {
+  }
+
+  #errorboxoutline {
+    padding: 0 15px;
+  }
+
+  /* Eror Code */
+  .error-code {
+    font-size: 11rem;
+  }
+
+  /* Message Error */
+  .error-message {
+  }
+
+  /* Message Error */
+  .error-message h2 {
+    font-size: 1.75rem;
+  }
+}

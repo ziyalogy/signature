@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <title>Video Intro</title>
+	<sampledata></sampledata>
+	<fields name="video-intro">
+		<fieldset name="basic" label="VIDEO_BASIC_LABEL" description="VIDEO_BASIC_DESC">
+			<field name="ft-desc" type="textarea" default="" label="VIDEO_DESCRIPTION_LABEL" description="VIDEO_DESCRIPTION_DESC" required="1" />
+
+			<field name="ft-link" type="text" default="" label="VIDEO_LINK_LABEL" description="VIDEO_LINK_DESC" />
+			<field name="ft-link-title" type="text" default="" label="VIDEO_LINK_TITLE_LABEL" description="VIDEO_LINK_TITLE_DESC" />
+
+			<field name="ft-bg" type="media" default="" label="VIDEO_BACKGROUND_LABEL" description="VIDEO_BACKGROUND_DESC" required="1" />
+
+			<field name="id-video" type="text" default="" label="VIDEO_ID_VIDEO_LABEL" description="VIDEO_ID_VIDEO_DESC" rows="5" cols="40" />
+		</fieldset>
+  </fields>
+</form>

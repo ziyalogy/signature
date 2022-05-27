@@ -1,0 +1,1113 @@
+// --------------------------------------------------
+// Module Styles
+// --------------------------------------------------
+
+// Extend style in base
+// --------------------
+@import "../../../plugins/system/t4/themes/base/scss/_modules";
+
+// 
+// Genecric Module
+// --------------------------------------------------
+.t4-module {
+
+  // Module Inner
+  .module-inner {
+  }
+}
+
+// Module Title
+// ------------
+.module-title {
+  border-bottom: none;
+  margin: 0 0 $spacer-xl/2 0;
+  padding: 0;
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+
+  span {
+    border-bottom: none;
+    color: $headings-color;
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+
+// Module Content
+// --------------
+.module-ct,
+.moduletable {
+}
+
+
+// 
+// Modules Prefixes
+// -----------------------------
+
+// Dark
+// -----
+.module-dark {
+  .module-title {
+  }
+} 
+
+.module.bg-primary,
+.module.bg-secondary,
+.module.bg-success,
+.module.bg-danger,
+.module.bg-warning,
+.module.bg-info,
+.module.bg-dark,
+// Cards
+.card.bg-primary,
+.card.bg-secondary,
+.card.bg-success,
+.card.bg-danger,
+.card.bg-warning,
+.card.bg-info,
+.card.bg-dark {
+  .module-title {
+    span {
+    }
+  }
+
+  .module-ct {
+    p {
+    }
+  }
+}
+
+// Mod rounded
+// -----------
+.module.mod-rounded {
+  .mod-rounded {
+  }
+}
+
+// Hilite
+// ----------
+.module-hilite {
+}
+
+// Shadow
+// ----------
+// Use to add Shadow to modules
+.mod-shadow {
+  .mod-shadow {
+  }
+}
+
+// Module outline
+.mod-border {
+  .mod-border {
+  }
+}
+
+
+//
+// JOOMLA! MODULES
+// --------------------------------------------------
+
+// Generic Modulable
+// -----------------
+// Modules are used in Component Position
+.moduletable {
+  > h3 {
+  }
+}
+
+
+// Menu
+// ----
+.t4-module,
+.t4-card,
+.moduletable,
+.module_menu {
+  .nav {
+  }
+  
+  .nav li {
+  }
+
+  .nav li .separator {
+  }
+  
+  .nav li a {
+    color: $gray-dark;
+
+    // Link States
+    &:hover, &:active, &:focus {
+      color: $body-color;
+    }
+  }
+
+  // Active state
+  .nav > li.active > a {
+    color: $body-color;
+    font-weight: $font-weight-bold;
+  }
+
+  // Sub Menus
+  .nav li ul {
+  }
+}
+
+
+// Menus in Dark Modules
+.module.bg-primary,
+.module.bg-secondary,
+.module.bg-success,
+.module.bg-danger,
+.module.bg-warning,
+.module.bg-info,
+.module.bg-dark,
+// Cards
+.card.bg-primary,
+.card.bg-secondary,
+.card.bg-success,
+.card.bg-danger,
+.card.bg-warning,
+.card.bg-info,
+.card.bg-dark {
+  .nav li a {
+  }
+}
+
+
+
+
+// Login Form
+// ----------
+#login-form {
+  margin-bottom: 0;
+
+  // Input Icons
+  .add-on {
+  }
+
+  .btn-primary {
+  }
+  
+  .form-group {
+
+    >#modlgn-username,
+    >#modlgn-passwd,
+    >#modlgn-secretkey {
+      width: 100% !important;
+    }
+    
+    .input-group-text {
+      border: none;
+
+      &:hover {
+        background-color: $gray-300;
+      }
+
+      &.icon-user {
+        line-height: 40px;
+      }
+    }
+  }
+
+  .form-group {
+    .form-control,
+    .input-group-text {
+      height: $input-height;
+      display: flex !important;
+      align-items: center;
+
+      @include media-breakpoint-between(md, lg) {
+        padding: $spacer-xs*3;
+      }
+
+      // Tablets 
+      @include media-breakpoint-down(md) {
+        max-width: 100%;
+      } 
+    }
+
+    .input-group-text {
+      text-align: center;
+      justify-content: center;
+      width: $input-height;
+    }
+  }
+
+  ul.mod-login__options {
+    li {
+      line-height: 1;
+
+      +li {
+        margin-top: $spacer-sm;
+      }
+
+      a {
+        color: $body-color;
+        font-size: $font-size-sm;
+
+        .icon-arrow-right {
+          font-size: 9px;
+        }
+      }
+    }
+  }
+
+  .mod-login__twofactor {
+    .input-group-prepend,
+    .input-group-append {
+      @media (min-width: 768px) and (max-width: 840px){
+        overflow: hidden;
+      }
+
+      .input-group-text {
+        @media (min-width: 768px) and (max-width: 840px){
+          padding: 0 10px;
+          font-size: $h5-font-size;
+          line-height: 45px;
+        }
+      }
+
+      .icon-star {
+        display: flex !important;
+      }
+    }
+
+    >.btn {
+      right: 10px;
+      bottom: 18px;
+      padding: 0;
+      color: $white;
+      height: auto;
+    }
+  }
+}
+
+// Advertisement
+// -------------
+.bannergroup {
+}
+
+.banneritem {
+  a {
+    font-weight: bold;
+  }
+}
+
+.bannerfooter {
+  border-top: 1px solid $border-color;
+}
+
+
+// Categories, Most Read,
+// Most Popular, Archieve, Tags...
+// -------------------------------
+// Categories
+// -------------------------------
+.categories-module {
+
+  > li {
+    border-bottom: none !important;
+    padding: 0;
+
+    +li {
+      margin-top: 12px;
+    }
+
+    h4 {
+      font-weight: 400;
+      letter-spacing: 0 !important;
+    }
+
+    a {
+      color: $gray-600;
+      padding: 0 0 0 22px !important;
+      font-size: 16px;
+
+      &:hover, &:focus, &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &.mod-grid {
+    margin: -$grid-gutter-width / 2;
+
+    // Mobile view
+    @include media-breakpoint-down(xs) {
+      margin-top: -$grid-gutter-width / 4;
+      margin-bottom: -$grid-gutter-width / 4;
+    }
+
+    > div {
+      padding-bottom: $grid-gutter-width / 2;
+      padding-top: $grid-gutter-width / 2;
+
+      // Mobile view
+      @include media-breakpoint-down(xs) {
+        padding-bottom: $grid-gutter-width / 4;
+        padding-top: $grid-gutter-width / 4;
+      }
+    }
+
+    .item-wrap {
+      background: $gray;
+      color: $white;
+      display: flex;
+      flex-direction: column;
+      padding: $grid-gutter-width;
+      position: relative;
+      justify-content: flex-end;
+      min-height: 370px;
+      overflow: hidden;
+
+      //Error IE
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        height: 100%;
+      }
+
+      // Mobile view
+      @include media-breakpoint-down(sm) {
+        min-height: 250px;
+      }
+
+      // Bg Intro
+      .bg-intro {
+        background-size: cover;
+        background-position: center center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        transition: 500ms all;
+      }
+
+      .item-inner {
+        position: relative;
+        z-index: 2;
+      }
+
+      // Title
+      h3 a {
+        color: $white;
+      }
+
+      // Description
+      .desc {
+        opacity: 0.8;
+      }
+
+      // Num Items
+      .numitems {
+        font-weight: 700;
+        margin-top: $grid-gutter-width / 4;
+
+        .far {
+          margin-right: $spacer / 4;
+        }
+      }
+
+      &:hover {
+        .bg-intro  {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+// Tour Price
+.tour-price {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+// Tour Info
+.tour-info {
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding: $grid-gutter-width / 2 0;
+  margin: $spacer 0;
+
+  > span {
+    display: inline-block;
+    margin-right: $grid-gutter-width;
+    font-weight: 700;
+
+    span {
+      margin-right: 3px;
+    }
+  }
+}
+
+.mod-tour-grid {
+  .col-lg-4 {
+    margin-top: $grid-gutter-width;
+  }
+
+  // Title
+  .mod-articles-title h3 {
+    margin-top: $spacer / 4;
+  }
+
+  // Other Info
+  .tour-other-info {
+    > span {
+      margin-right: $spacer / 2;
+    }
+  }
+
+  // Item Lead
+  // --------------
+  .item-lead {
+    .info-article {
+      background: $gray-100;
+      padding: $grid-gutter-width * 2;
+      height: 100%;
+
+      // Mobile view
+      @include media-breakpoint-down(md) {
+        padding: $grid-gutter-width;
+      }
+    }
+  }
+
+  .bg-lead {
+    background-size: cover;
+    background-position: center center;
+    min-height: 400px;
+
+    // Mobile view
+    @include media-breakpoint-down(xs) {
+      min-height: 250px;
+    }
+  }
+
+  // Item Child
+  .item-child {
+    .info-article-wrap {
+      background-size: cover;
+      background-position: center center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: $grid-gutter-width;
+      position: relative;
+      min-height: 550px;
+
+      // Mobile view
+      @include media-breakpoint-down(md) {
+        min-height: 400px;
+      }
+
+      &:before {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 48.44%, rgba(0, 0, 0, 0.6) 69.12%);
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+
+        // Mobile view
+        @include media-breakpoint-down(sm) {
+          background: linear-gradient(180deg, transparent, $black);
+        }
+      }
+    }
+
+    .info-article {
+      position: relative;
+      z-index: 2;
+
+      //Error IE
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        position: absolute;
+        top: auto;
+        bottom: $grid-gutter-width;
+      }
+    }
+
+    // Tour Info
+    .tour-info {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      border-bottom: 0;
+      color: $white;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    // Link Title
+    .heading-link  {
+      color: $white;
+    }
+
+    // Category
+    .category-article-dot a {
+      color: $white;
+    }
+  }
+
+  // View All
+  .view-all {
+    margin-top: $grid-gutter-width * 2;
+
+    // Mobile view
+    @include media-breakpoint-down(md) {
+      margin-top: $grid-gutter-width;
+    }
+  }
+}
+
+.mod-tour-list {
+  .item-inner {
+    + .item-inner {
+      margin-top: $grid-gutter-width;
+    }
+  }
+
+  // Intro Image
+  .intro-image {
+    margin-right: $grid-gutter-width;
+
+    // Mobile view
+    @include media-breakpoint-down(sm) {
+      margin-right: $grid-gutter-width / 2;
+    }
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      height: 100px;
+      max-width: 120px;
+      width: 120px;
+    }
+  }
+
+  // Title
+  h4 {
+    // Mobile view
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+    }
+  }
+
+  // Price
+  .tour-price {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  // Other Info
+  .tour-other-info {
+    > span {
+      margin-right: $spacer / 2;
+    }
+  }
+}
+
+// Category
+.category-article-dot a {
+  color: $gray-700;
+  text-transform: uppercase;
+  font-size: $h6-font-size;
+  position: relative;
+
+  &:before {
+    background: $yellow;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    margin-right: $spacer / 2;
+    height: 10px;
+    width: 10px;
+  }
+}
+
+.category-module {
+}
+
+.mostread,
+.latestnews,
+.relateditems,
+.tagssimilar ul {
+  li a {
+  }
+}
+
+ul.latestnews {
+  li {
+    display: flex;
+    flex-wrap: wrap;
+
+    +li {
+      margin-top: $grid-gutter-width/2;
+    }
+
+    // Picture
+    .pic-article {
+      width: 35%;
+    }
+
+    // Info
+    .info-article {
+      flex: 1;
+      padding-left: $grid-gutter-width/2;
+
+      // category
+      .category-name {
+        a {
+          color: #BCBDC2;
+          text-transform: uppercase;
+          padding: 0 0 0 $grid-gutter-width/2;
+          font-size: 11px;
+          line-height: 1;
+
+          &:before {
+            content: "\f111";
+            font-size: 8px;
+          }
+        }
+      }
+
+      // Title
+      .title-article {
+        h6 {
+          a {
+            color: $headings-color;
+            font-size: 18px;
+            padding: 0;
+
+            &:before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.archive-module {
+}
+
+
+.view-latest-list {
+  .row {
+    @include media-breakpoint-up(xl) {
+      margin-left: -$grid-gutter-width * 2;
+      margin-right: -$grid-gutter-width * 2;
+
+      > div {
+        padding-left: $grid-gutter-width * 2;
+        padding-right: $grid-gutter-width * 2;
+      }
+    }
+
+    > div {
+      + div {
+        border-left: 1px solid $border-color;
+
+        // Tablet view
+        @include media-breakpoint-down(md) {
+          border-left: 0;
+        }
+      }
+    }
+  }
+
+  // Item
+  .item-latest {
+    // Tablet view
+    @include media-breakpoint-down(md) {
+      border-top: 1px solid $border-color;
+      padding-top: $grid-gutter-width;
+    }
+
+    + .item-latest {
+      border-top: 1px solid $border-color;
+      padding-top: $grid-gutter-width;
+      margin-top: $grid-gutter-width;
+    }
+  }
+
+  // Info
+  .wrap-info {
+    font-size: $h6-font-size;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: $spacer / 2;
+
+    > div {
+      + div {
+        border-left: 1px solid $gray-300;
+        margin-left: $spacer / 2;
+        padding-left: $spacer / 2;
+      }
+    }
+  }
+
+  // Intro Image
+  .intro-image {
+    margin-bottom: $grid-gutter-width;
+  }
+
+  // Name
+  .category-name a {
+    color: $red;
+
+    &:hover,&:focus,&:active {
+      color: darken($red,5%);
+    }
+  }
+
+  // Title
+  .title-article {
+    h3 {
+      // Mobile view
+      @include media-breakpoint-down(xs) {
+        font-size: $h4-font-size;
+      }
+    }
+  }
+
+  // Read More
+  .article-more {
+    a {
+      border-bottom: 1px solid;
+      display: inline-block;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin-top: $grid-gutter-width;
+      font-weight: 700;
+
+      // Mobile view
+      @include media-breakpoint-down(sm) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+// News Feed
+// ----------
+.feed {
+  // Feed Title
+  h4 {
+  }
+
+  // Feed list
+  .newsfeed {
+
+    li {
+      border-top: 1px solid $border-color;
+    }
+
+    .feed-link {
+    }
+
+    .feed-item-description {
+    }
+  }
+
+}
+
+
+// Syndication
+// -----------
+a.syndicate-module {
+}
+
+
+// Latest Users 
+// ------------
+.latestusers {
+  li {
+  }
+}
+
+
+// Stats 
+// -----
+.stats-module {
+  dt, dd {
+  }
+}
+
+
+// Popular Tags
+//-------------
+.tagspopular {
+  ul {
+  }
+
+  ul > li {
+    background: rgba($black, 0.05);
+    padding: $spacer-xs $spacer-lg/2;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: rgba($black, 0.1);
+    }
+  }
+
+  ul > li > a {
+    color: $gray-800;
+    font-size: $h6-font-size;
+
+    // Links states
+    &:hover,
+    &:focus,
+    &:active {
+      color: $gray-800 !important;
+    }
+  }
+
+  .tag-count {
+  }
+}
+
+.mod-highlight {
+  color: $white;
+  padding: $grid-gutter-width;
+
+  a {
+    color: $gray-300!important;
+
+    &:hover,&:focus,&:active {
+      color: $white!important;
+    }
+  }
+
+  input {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.1)!important;
+    color: $white;
+    max-width: 100%!important;
+
+    &::placeholder {
+      color: $gray-300;
+    }
+
+    &:focus {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.2)!important;
+      color: $white;
+    }
+  }
+
+  .input-group-text {
+    background: rgba(255,255,255,0.1)!important;
+    color: $white;
+  }
+
+  // Title
+  .module-title span {
+    color: $white;
+  }
+}
+
+// Breadcrums Module
+// -----------------
+.module-ct > ol.breadcrumb {
+}
+
+// Acymailing
+.acym_module {
+  text-align: center;
+
+  table.acym_form,
+  tr,
+  tr > td {
+    // Mobile view
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+  }
+
+  tbody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    tr {
+      + tr {
+        margin-top: $spacer;
+      }
+
+      > .acyterms,
+      > .acyterms + .acysubbuttons {
+        padding-top: $spacer;
+      }
+
+      > .acyterms + .acysubbuttons {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .acyterms {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    input[name="terms"] {
+      margin-right: 5px;
+    }
+
+    a {
+      margin: 0 4px;
+    }
+  }
+
+  .acym_module_form {
+    display: flex;
+    justify-content: center;
+
+    td {
+      // Mobile view
+      @include media-breakpoint-down(lg) {
+        display: block;
+        text-align: center;
+
+        + td {
+          margin-top: $grid-gutter-width / 2;
+          padding-top: 0;
+        }
+
+        &.acyterms {
+          display: flex;
+          
+        }
+      }
+    }
+
+    // Input
+    input {
+      max-width: 100%;
+    }
+    
+    input[type="email"],
+    input[type="text"] {
+      border: 1px solid $input-border-color;
+      padding: $input-btn-padding-y $input-btn-padding-x;
+      height: $input-height;
+      margin-right: 15px;
+      margin-left: 15px;
+      width: 600px;
+      max-width: 600px;
+
+       // Mobile view
+      @include media-breakpoint-down(md) {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  // Description
+  .acym_posttext {
+    max-width: 500px;
+    margin: auto;
+    margin-top: $grid-gutter-width;
+  }
+}
+
+// Masthead
+div.ja-masthead {
+  background-image: url('../images/bg-masthead.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: $gray-700;
+
+  // Mask Before
+  &:before {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, #FFF 80.23%);
+    opacity: 1;
+  }
+
+  .ja-masthead-detail {
+    color: $gray-700;
+    padding-top: $grid-gutter-width * 3;
+    padding-bottom: $grid-gutter-width * 7;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: -$grid-gutter-width*4;
+
+    // Landscape phones
+    @include media-breakpoint-down(sm) {
+      padding: $grid-gutter-width * 2 $grid-gutter-width / 2 $grid-gutter-width * 6;
+    } 
+
+    // Title
+    .ja-masthead-title {
+      font-size: $h2-font-size;
+      margin: 0;
+      line-height: 54px;
+
+      // Landscape phones
+      @include media-breakpoint-down(sm) {
+        font-size: 32px;
+        line-height: 35px;
+      } 
+    }
+
+    // Description
+    .ja-masthead-description {
+      max-width: 600px;
+      margin: 20px auto 0;
+    }
+  }
+
+  // Breadcrumb
+  .block-breadcrumb {
+    font-weight: 700;
+    max-width: 750px;
+    margin: 0 auto;
+
+    .moduletable {
+      border: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .breadcrumb {
+      justify-content: center;
+      font-size: 16px;
+      margin-top: 20px;
+      padding: 0;
+
+      // Landscape phones
+      @include media-breakpoint-down(sm) {
+        margin-top: $grid-gutter-width/3;
+      }
+
+      a {
+        color: $gray-700;
+
+
+      }
+
+      // Icon Home
+      .home-map {
+        margin-right: $spacer;
+        display: none;
+      }
+
+      .divider {
+        margin: 0 $spacer;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}

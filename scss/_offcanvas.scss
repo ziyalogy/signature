@@ -1,0 +1,149 @@
+//
+// OFF-CANVAS CONTENT STYLES
+// -------------------------------------
+// Extend style in base
+// --------------------
+@import "../../../plugins/system/t4/themes/base/scss/_offcanvas";
+
+// Offcanvas toggle
+// -----------------------------------
+.t4-offcanvas-toggle {
+  background: rgba(255,255,255,0.1);
+  border: 0;
+  color: $white;
+  display: block;
+  float: right;
+  height: 40px;
+  line-height: 40px;
+  margin-left: $spacer;
+  padding: 0;
+  transition: all 0.35s ease-in-out;
+  width: 40px;
+
+  &:hover {
+    background: rgba(255,255,255,0.15);
+    cursor: pointer;
+    color: $white;
+  }
+
+  > span {
+    vertical-align: middle;
+  }
+
+  i {
+    font-size: 18px;
+  }
+}
+
+
+.t4-offcanvas {
+
+  // Off Canvas Header
+  // -----------------------------------
+  .t4-off-canvas-header {
+    display: flex;
+    color: $white;
+    align-items: center;
+    position: relative;
+    padding-left: $grid-gutter-width;
+    padding-right: $grid-gutter-width;
+    height: 50px;
+
+    h3 {
+      color: $white;
+      line-height: 1;
+    }
+
+    .close {
+      align-items: center;
+      border-radius: 0;
+      background: rgba(0,0,0,0.2);
+      display: flex;
+      color: $white;
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      padding: 0 15px;
+      width: auto;
+    }
+  }
+
+  // Off Canvas Body
+  // -----------------------------------  
+  .t4-off-canvas-body {
+    padding: $grid-gutter-width;
+
+    // Nav bar
+    .navbar {
+      .nav-link,
+      .separator {
+        background: none;
+        color: $t4-off-canvas-link-color;
+
+        &:hover, &:focus, &:active {
+          background: none;
+          color: $t4-off-canvas-link-hover-color;
+        }
+      }
+
+      .dropdown-toggle:after {
+        margin-top: 10px;
+      }
+
+      .active > a,
+      .active > span,
+      .show > a,
+      .show > span {
+        color: $t4-off-canvas-link-hover-color;
+      }
+
+      // Dropdown menu
+      .dropdown-menu {
+        background: transparent;
+        min-width: 0;
+        padding-left: $spacer;
+
+        li > a,
+        li > span {
+          background: none!important;
+          color: $t4-off-canvas-link-color!important;
+
+          &:hover,&:focus,&:active {
+            background: none!important;
+            color: $t4-off-canvas-link-hover-color!important;
+          }
+        }
+
+        .active > a,
+        .active > span,
+        .show > a,
+        .show > span {
+          background: none!important;
+          color: $t4-off-canvas-link-hover-color!important;
+        }
+        
+        .dropdown-item,
+        .nav-link {
+          padding-left: $spacer / 2;
+        }
+      }
+    }
+  }
+
+  // Off Canvas Module
+  // ---------------------------------
+  .t4-module {
+    .module-title {
+      color: $headings-color;
+      font-size: $h4-font-size;
+      margin-bottom: $spacer / 2;
+      line-height: $line-height-base;
+    }
+    
+    .module-ct {
+      border: 0;
+      padding: 0;
+    }
+  }
+}

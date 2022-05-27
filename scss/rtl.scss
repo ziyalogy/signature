@@ -1,0 +1,334 @@
+// Function, variables
+@import "vars";
+
+// For template rtl style
+.fa, .fab, .fal, .far, .fas{
+	transform: scale(-1,1);
+}
+
+html[dir="rtl"] {
+	// Fix Icon
+  .fa-angle-double-left:before {
+  	content: "\f101";
+  }
+
+  .fa-angle-left:before {
+  	content: "\f105";
+  }
+
+  .fa-angle-double-right:before {
+  	content: "\f100";
+  }
+
+  .fa-angle-right:before {
+  	content: "\f104";
+  }
+}
+
+// Owl Carousel
+.owl-stage-outer {
+	direction: ltr;
+
+	.owl-stage {
+		direction: rtl;
+	}
+}
+
+.contact {
+	.contact-info {
+		.contact-address {
+			.wrap-info {
+				.fa {
+					text-align: left;
+				}
+			}
+		}
+	}
+}
+
+// Smart Search
+.finder {
+	#finder-filter-window {
+		.filter-branch {
+			float: right;
+		}
+	}
+
+	#finder-filter-select-dates {
+		.filter-date {
+			float: right;
+			text-align: right;
+		}
+
+		.filter-date-operator {
+			margin-right: 0 !important;
+		}
+	}
+}
+
+
+// Edit Profile
+#member-profile {
+	legend {
+		text-align: right;
+	}
+	
+	.control-group {
+		[class^="col-"], [class*=" col-"] {
+			text-align: right;
+		}
+	}
+}
+
+// Mail to
+#mailto-window {
+	.controls {
+		input {
+			text-align: right;
+		}
+	}
+
+	#consentbox {
+		.form-check-input {
+			float: right;
+		}
+	}
+}
+
+#member-profile {
+	.control-group {
+		.chzn-container {
+			.chzn-drop {
+				right: -9999px;
+				left: auto !important;
+
+				.chzn-search {
+					position: static;
+				}
+			}
+
+			&.chzn-with-drop {
+				.chzn-drop {
+					right: 0;
+				}
+			}
+		}
+	}
+}
+
+.contentpane {
+	.article-info {
+		justify-content: flex-end;
+	}
+}
+
+.owl-carousel,
+.bx-wrapper { direction: ltr; }
+.owl-carousel .owl-item { direction: rtl; }
+
+// Vik Booking
+.com_vikbooking {
+	.vbo-operators-login-wrap {
+		.vbo-operators-authcode {
+			margin-left: $grid-gutter-width/2;
+		}
+
+		.loginblock {
+			margin-right: $grid-gutter-width/2;
+		}
+	}
+
+	.vborderslisttable {
+		tr {
+			td {
+				text-align: right;
+			}
+		}
+	}
+
+	.vbo-availability-room-container {
+		.vbo-availability-room-details {
+			.vbo-availability-room-details-first {
+				float: right;
+				border-right: 1px solid $border-color;
+
+				.vbo-availability-room-details-left {
+					float: right;
+					margin: 0 0 0 $grid-gutter-width;
+
+					img {
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.vbdivsearch {
+	.vb-search-inner {
+		.vbo-search-inpblock {
+			margin-right: 0;
+			margin-left: $grid-gutter-width/3;
+		}
+
+		.vbo-search-num-racblock {
+			.vbo-search-num-adults-entry {
+				margin-right: 0;
+				margin-left: $grid-gutter-width/2;
+			}
+		}
+	}
+}
+
+
+.vbrdetboxtop {
+	.vblistroomnamediv {
+		.vblistroomcat {
+			&:before {
+				margin-left: $grid-gutter-width/3;
+				margin-right: 0;
+			}
+		}
+	}
+
+	.vbroomimgdesc {
+		img {
+			margin-right: 0;
+		}
+	}
+
+	.room_carats {
+		>h3 {
+			float: right;
+			width: 100%;
+			margin-right: 0 !important;
+		}
+	}
+}
+
+.vbo-room-details-booking-wrapper {
+	.vbdivsearch {
+		width: 100%;
+		float: right;
+
+		.vb-search-inner {
+			>div {
+				float: right;
+			}
+		}
+	}
+}
+
+.vbo-pkgdet-topwrap {
+	.vbo-pkgdet-condsdates-block {
+		.vbo-pkgdet-conds {
+			text-align: right;
+		}
+	}
+}
+
+.vbo-pkgdet-room-container {
+	.vbo-pkgdet-room-thumbs-cont {
+		>div {
+			float: right;
+		}
+	}
+}
+
+.vbo-pkglist-pkg {
+	.vbo-pkglist-pkg-btwo {
+		border-left: 1px solid $border-color;
+	}
+
+	.vbo-pkglist-pkg-dates {
+		float: right !important;
+	}
+}
+
+.vbo-showprc-head-wrapper {
+	.vbo-results-head {
+		i {
+			margin: $grid-gutter-width/3 0 0 $grid-gutter-width/3;
+		}
+
+		.vbcheckinroom,
+		.vbcheckoutroom {
+			width: auto !important;
+		}
+	}
+}
+
+.vbo-showprc-room-head {
+	.vbo-showprc-staydetails {
+		float: right;
+
+		.vbo-showprc-staydetails-party {
+			margin-right: 0;
+		}
+	}
+}
+
+.vbo-showprc-room-block {
+	.vbroomimgdesc {
+		.vikfx-gallery-container {
+			margin-right: 0;
+			margin-left: $grid-gutter-width;
+
+			img {
+				margin: 0;
+			}
+		}
+	}
+}
+
+.vbo-showprc-price-entry {
+	.vbo-showprc-price-entry-radio,
+	.vbo-showprc-price-entry-rateplan  {
+		float: right;
+	}
+}
+
+.vbo-oconfirm-cfield-entry-checkbox {
+	>div {
+		float: right !important;
+	}
+
+	.vbo-oconfirm-cfield-input {
+		margin-right: 8px;
+	}
+}
+
+.room_buttons_box,
+.vboconfirmbottom {
+	.booknow {
+		float: left;
+	}
+
+	.goback {
+		float: right;
+	}
+}
+
+// Search
+div.vbmodhorsearchmaindiv {
+	form > div {
+		float: right!important;
+		margin-left: 20px;
+		margin-right: 0;
+	}
+	.vbmodhorsearchrac .horsanumsel select,
+	.vbmodhorsearchrac .horscnumsel select,
+	.vbhsrnselsp select,
+	.vbhsrcselsp select,
+	.vbmodhorsearchroomdentr .horsanumdiv select,
+	.vbmodhorsearchroomdentr .horscnumdiv select,
+	.vbmodhorsearchcategoriesblock select {
+		background-position: left .75rem center;
+	}
+
+	&.vbo-horizsearch-standardformat-wrap .input-group input {
+		text-align: right;
+		padding-right: 45px!important;
+	}
+}

@@ -1,0 +1,88 @@
+//
+// T4 Components
+// ---------------------------------------------
+
+//
+// Banners
+.t4-banner {
+  text-align: center;
+  background: $gray-100;
+}
+
+
+//
+// Bootstraps Components
+// ---------------------------------------------
+.container-hd {
+	width: 100%;
+	padding-right: $grid-gutter-width / 2;
+	padding-left: $grid-gutter-width / 2;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1720px;
+}
+
+.large-gutters {
+	@include media-breakpoint-up(xl) {
+		margin-left: -$grid-gutter-width;
+		margin-right: -$grid-gutter-width;
+
+		> div {
+			padding-left: $grid-gutter-width;
+			padding-right: $grid-gutter-width;
+		}
+
+	}
+}
+
+.container {
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+
+// Pattern Decor
+.t4-palette-secondary,
+.wave-bottom:after {
+	background-image: url('../images/decor.png');
+}
+
+// Owl Carousel
+// -----------------------------
+div.owl-carousel {
+	.owl-dots {
+		align-items: center;
+		margin-top: 0;
+		width: auto;
+
+		.owl-dot {
+			background: transparent;
+			line-height: 1;
+			height: auto;
+			width: auto;
+
+			&.active,
+			&.hover {
+				background: transparent;
+			}
+		}
+
+		&.disabled {
+			display: none!important;
+		}
+	}
+
+	.owl-nav {
+		button {
+			&:hover,&:focus,&:active {
+				outline: none;
+			}
+		}
+
+		&.disabled {
+			display: none!important;
+		}
+	}
+}

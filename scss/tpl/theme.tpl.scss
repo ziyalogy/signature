@@ -1,0 +1,620 @@
+// Function, variables
+@import "../vars";
+
+// Theme Customize
+@import "../../../../plugins/system/t4/themes/base/scss/theme.tpl";
+// Color
+.link-primary {
+	color: __color_primary!important;
+
+	&:hover,&:focus,&:active {
+		opacity: 0.8;
+	}
+}
+
+.heading-link {
+	color: #4d5a64;
+
+	&:hover,&:focus,&:active {
+		color: __color_primary;
+	}
+}
+
+.dropdown-menu {
+	li {
+		&.show,
+		&.active {
+			> a,
+			> span {
+				color: __color_primary!important;
+			}
+		}
+
+		> a,
+		> span {
+			&:hover,&:focus,&:active {
+				color: __color_primary!important;
+			}
+		}
+	}
+}
+
+.mod-highlight {
+	background: __color_secondary;
+}
+
+.vbmodroomsview a:hover,
+.vbmodroomsview a:focus,
+.vbmodroomsview a:active {
+	background: __color_secondary!important;
+	color: #fff!important;
+}
+
+// Button Color
+.btn-light,
+.vbo-availability-room-details-last-inner .btn {
+	color: __color_secondary!important;
+
+	&:hover,&:focus,&:active {
+		color: __color_secondary!important;
+	}
+}
+
+.vbsearchinputmodhors {
+	background: __color_primary!important;
+}
+// Font Style
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: __heading_font_family;
+}
+
+.com-finder .form-inline label,
+.vbmodroomsname,
+.vbo-pkglist-pkg-name {
+	font-family: __heading_font_family;
+}
+
+// ACM Style
+.acm-slideshow .owl-carousel {
+	.owl-nav button {
+		&:hover,&:focus,&:active {
+			background: __color_primary;
+			color: #fff;
+		}
+	}
+
+	.owl-dots .owl-dot {
+		span {
+			&:hover,&:focus,&:active {
+				background: __color_primary;
+			}
+		}
+
+		&.active {
+			border-color: __color_primary;
+
+			span {
+				background: __color_primary;
+			}
+		}
+	}
+}
+
+.acm-testimonial.style-1 .owl-control > button {
+	&:hover,&:focus,&:active {
+		background: __color_primary;
+		color: #fff;
+	}
+}
+
+
+// Page User
+// ------------------------
+.registration,
+.profile-edit,
+.profile{
+	legend {
+	    font-family: __heading_font_family; 
+	}
+}
+
+//
+// Login
+// -------------------------
+.login-wrap {
+
+	// Other Link
+	.other-links {
+		ul {
+			li {
+				a {
+					&:hover {
+			          	color: __color_primary;
+			        }
+				}
+	        }
+	    }
+    }
+}
+
+// Seach
+.search {
+	.btn-toolbar {
+		.btn-group {
+			button {
+				background: __color_primary;
+
+				&:hover {
+					background: __color_primary;
+				}
+			}
+		}
+	}
+
+	legend,
+	.searchintro,
+	.result-title {
+	    font-family: __heading_font_family; 
+	}
+}
+
+.com-finder,
+.search {
+	#search-results,
+	.search-results {
+		.result-title {
+			a {
+				&:hover {
+					color: __color_primary;
+				}
+			}
+		}
+	}
+}
+
+// Read more
+// -----------
+.readmore {
+	.btn {
+		color: __color_primary;
+		border-bottom-color: __color_primary;
+
+		&:hover {
+		}
+	}
+}
+
+// Article Page
+// -------------------------
+.item-page {
+	.list-info {
+		ul {
+
+			li {
+
+				&:before {
+					color: __color_primary;
+				}
+			}
+		}
+	}
+}
+
+// Module login
+#login-form {
+	ul {
+		li {
+			a {
+				&:hover {
+					color: __color_primary;
+				}
+			}
+		}
+	}
+}
+
+// Last Article
+ul.latestnews {
+	li {
+		a {
+			&:before {
+				color: __color_primary;
+			}
+
+			&:hover {
+				color: __color_primary !important;
+			}
+		}
+	}
+}
+
+// Blog Layout
+// -----------
+.item-content,
+.item-page {
+    // Title
+    .page-header {
+    	h2 {
+    		a {
+    			&:hover {
+					color: __color_primary;
+				}
+    		}
+    	}
+    }
+
+    .article-info {
+
+    	dd {
+
+    		&.category-name {
+    			a {
+    				font-family: __heading_font_family; 
+    				color: __color_primary !important;
+    			}
+    		}
+    	}
+    }
+}
+
+// Items More
+// -----------
+.items-more {
+	.nav-tabs {
+		> li > a {
+			&:hover {
+				color: __color_primary;
+			}
+		}
+	}
+}
+
+//
+// Contacts
+// -------------------------
+.contact {
+
+  	// Address and Position
+	.contact-address {
+		.fa, h4 {
+			color: __color_primary;
+		}
+	}
+
+	#myTabTabs {
+		a {
+			&:hover {
+				color: __color_primary;
+			}
+		}
+
+		li {
+			a.active {
+				color: __color_primary;
+			}
+		}
+    }
+
+    .contact-articles {
+    	ul {
+    		li {
+    			a {
+    				&:hover {
+    					color: __color_primary;
+    				}
+    			}
+    		}
+    	}
+    }
+
+    // Contact Link
+    .contact-links {
+    	ul.nav {
+    		li {
+    			a {
+    				&:hover,&:focus,&:active {
+    					color: __color_primary;
+    					border-color: __color_primary;
+    				}
+    			}
+    		}
+    	}
+    }
+
+    // Plain
+	.plain-style {
+		.content-left {
+			background: __color_secondary;
+		}
+
+		.submit {
+			.btn-primary {
+				background: __color_secondary !important;
+				border-color: __color_secondary !important;
+			}
+		}
+	}
+}
+
+// Article Index
+// -----------
+.article-index {
+	ul {
+		li {
+			a {
+				&:hover,
+				&.active {
+					color: __color_primary;
+				}
+			}
+		}
+	}
+}
+
+// Article Index
+// -----------
+.article-index {
+	ul {
+		li {
+			a {
+				&:hover {
+					color: __color_primary;
+				}
+			}
+		}
+	}
+}
+
+.tag-category {
+	ul.list-group {
+		li {
+
+			h3 {
+
+				a {
+					&:hover {
+						color: __color_primary;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Latest Articles
+.latestnews {
+  li {
+    +li {
+    }
+
+    // Content
+    .content-article {
+      .wrap-info {
+
+        .category-name {
+          color: __color_primary;
+          font-family: __heading_font_family;
+        }
+      }
+
+      // Title
+      .title-article {
+        h4 {
+          a {
+          	&:hover {
+          		color: __color_primary;
+          	}
+          }
+        }
+      }
+    }
+  }
+}
+
+.categories-module.categories-module {
+
+  a {
+
+    &:hover, &:focus, &:active {
+      color: __color_primary;
+    }
+  }
+}
+
+.tagspopular {
+  ul {
+
+    li {
+      a {
+      	&:hover {
+      		color: __color_primary;
+      	}
+      }
+    }
+  }
+}
+
+
+
+/*
+*
+* Vik Booking
+*
+*/ 
+.com_vikbooking {
+	.t4-main-body {
+		.btn,
+		input[type="submit"] {
+			background: __color_secondary;
+		}
+	}
+
+	// Button
+	.goback {
+		a {
+			background: __color_secondary;
+		}
+	}
+
+	// Category
+	.vblistroomcat {
+		&:before {
+	        color: __color_primary;
+	    }
+	}
+
+	.vbdivsearch {
+
+		.input-group {
+
+			i {
+				background: __color_secondary;
+			}
+		}
+	}
+
+	// Room list
+	.room_result {
+		.vblistroomblock {
+
+			// Info
+			.vbo-info-room {
+				.vbdescrlistdiv {
+
+					// Title
+					.vbrowcname {
+						font-family: __heading_font_family;
+					}
+				}
+			}
+		}
+
+		.vbcontdivtot {
+			.vbdivtot {
+				.vbdivtotinline {
+
+					// Button
+					.vbselectordiv {
+						a {
+							background: __color_secondary;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Detail Room
+	.vbrdetboxtop {
+		.vblistroomnamediv {
+
+			// Name
+			.vblistroomname {
+				font-family: __heading_font_family;
+			}
+		}
+	}
+
+	// Detail Packages
+	.vbo-pkgdet-topwrap {
+		.vbo-pkgdet-condsdates-block {
+
+			.vbo-pkgdet-dates {
+				background: __color_secondary;
+			}
+		}
+	}
+
+	.vbo-pkgdet-roomswrap {
+		.vbo-pkgdet-room-outer {
+
+			.vbo-pkgdet-room-booknow {
+
+				.vbo-pkgdet-room-booknow-btn {
+					background: __color_secondary;
+				}
+			}
+		}
+	}
+
+	// Calendar
+	.vbo-availcalendars-cont {
+
+		.vbcalsblock {
+			table {
+				tr {
+					&.vbcaltrmonth {
+						td {
+							background: __color_secondary;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.vbo-seldates-cont {
+		.vbo-room-details-booking-wrapper {
+
+			// Buton
+			input.vbdetbooksubmit {
+				background: __color_primary ;
+			}
+		}
+	}
+
+	// Step
+	.vbstepsbarcont {
+		ol {
+			li {
+
+				&.vbo-step-complete {
+					border-bottom-color: __color_secondary;
+
+					&:before {
+						background: __color_secondary;
+					}
+				}
+
+				&.vbo-step-current {
+					border-bottom-color: __color_secondary;
+
+					&:before {
+						border-color: __color_secondary;
+					}
+				}
+			}
+		}
+	}
+
+	.room_buttons_box {
+		.booknow {
+			background: __color_primary;
+		}
+	}
+
+	.vbo-showprc-head-wrapper {
+		.vbo-showprc-wrapper {
+			.vbo-showprc-room-block {
+				.vbo-showprc-roomname {
+					font-family: __heading_font_family;
+				}
+			}
+		}
+	}
+
+	.vbo-pkglist-container {
+		.vbo-pkglist-pkg-bthree {
+			.vbo-pkglist-pkg-cost {
+
+			}
+
+			.vbo-pkglist-pkg-details {
+				a {
+					background: __color_secondary;
+				}
+			}
+		}
+	}
+}
