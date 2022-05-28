@@ -20,7 +20,7 @@
 			<field name="name-member" type="text" default="" size="40" label="MEMBERS_NAME_MEM_LABEL" description="MEMBERS_NAME_MEM_DESC" />
 			<field name="name-office" type="text" default="" size="40" label="MEMBERS_NAME_OFFICE_LABEL" description="MEMBERS_NAME_OFFICE_DESC" />
 			<field name="link-social" type="textarea" default="" label="MEMBERS_LINK_SOCIAL_LABEL" description="MEMBERS_LINK_SOCIAL_DESC" rows="5" cols="40" />
-			<field name="title" type="sql" default="10" label="Select an article" query="SELECT id, title FROM #__content" key_field="id"/>
+			<field name="title" type="sql" default="10" label="Select member profile" query="SELECT id, title FROM #__content WHERE `catid` = 34"/>
 		</fieldset>	
   	</fields>
 </form>

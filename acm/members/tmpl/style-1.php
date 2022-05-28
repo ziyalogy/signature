@@ -22,6 +22,7 @@
    $image = $helper->get('img');
    $nameMember = $helper->get('name-member');
    $nameOffice = $helper->get('name-office');
+   $memberProfile = $helper->get('memberProfile');
    ?>
 
 <div class="acm-members style-1">
@@ -58,18 +59,12 @@
 								<h6><?php echo $helper->get('name-office', $i); ?></h6>
 							<?php endif; ?>
 							</div>
-							<?php if ($helper->get('link-social', $i)): ?>
+							<?php if ($helper->get('memberProfile', $i)): ?>
 							<div class="bio_story">
 				       			<a href="#personbio">See bio</a>
 							</div>
 				        <?php endif; ?>
 						</a>
-						
-						
-						
-				        
-						
-				        
 					</div>-->
 					
 		        </div>
