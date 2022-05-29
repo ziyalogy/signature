@@ -35,9 +35,7 @@ if (
     $mh_background &&
     $mh_background->type == 'image'
 ): ?>style="background-image: url('<?php echo $mh_background->url; ?>')"<?php endif; ?>>
-	<?php // Video backround
-// Video backround
-?>if ($mh_background && $mh_background->type == 'video'):
+	<?php if ($mh_background && $mh_background->type == 'video'):
      preg_match_all('/^.*\.(mp4|ogg|webm)$/', $mh_background->url, $mathes); ?>
         <div id="ja-masthead-bg" style="display: none;">
             <video id="ja_masthead_bg_video" loop="true" autoplay="true">
@@ -112,8 +110,7 @@ if (
                 jQuery("#ja-masthead-bg").css("display","block");
             });
         </script>
-    <?php
- endif; ?>
+    <?php endif; ?>
     <div class="ja-masthead-detail">
         <h3 class="ja-masthead-title"><?php echo $masthead['title']; ?></h3>
         

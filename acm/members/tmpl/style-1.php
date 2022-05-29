@@ -10,7 +10,7 @@
     * Copyright (C) 2004-2018 Buildal Systems (U) Co., Ltd. All Rights Reserved.
     * @license - Copyrighted Commercial Software
     * Author: Buildal Systems (U) Co., Ltd
-    * Websites:  http://www.buildal.ug -  http://www.buildal.ug
+    * Websites:  http://www.buildal.ug -  http://www.joomlancers.com
     * This file may not be redistributed in whole or significant part.
     * ------------------------------------------------------------------------
     */
@@ -22,7 +22,6 @@
    $image = $helper->get('img');
    $nameMember = $helper->get('name-member');
    $nameOffice = $helper->get('name-office');
-   $memberProfile = $helper->get('memberProfile');
    ?>
 
 <div class="acm-members style-1">
@@ -59,12 +58,18 @@
 								<h6><?php echo $helper->get('name-office', $i); ?></h6>
 							<?php endif; ?>
 							</div>
-							<?php if ($helper->get('memberProfile', $i)): ?>
+							<?php if ($helper->get('link-social', $i)): ?>
 							<div class="bio_story">
 				       			<a href="#personbio">See bio</a>
 							</div>
 				        <?php endif; ?>
 						</a>
+						
+						
+						
+				        
+						
+				        
 					</div>-->
 					
 		        </div>
