@@ -96,6 +96,8 @@
 		<position>tz_menu</position>
 		<position>rwanda_menu</position>
 		<position>uganda_menu</position>
+		<position>experts_list</position>
+		<position>call_experts</position>
 
 	</positions>
 	<languages folder="language">

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <title>Members Style 1</title>
+	<sampledata />
+
+	<fields name="teams-1">
+		<fieldset
+      name="basic"
+      label="MEMBERS_INFO_LABEL"
+      description="MEMBERS_INFO_DESC"
+    >
+			<field
+        name="number-column"
+        type="list"
+        label="MEMBERS_NUM_COLUMN_LABEL"
+        description="MEMBERS_NUM_COLUMN_DESC"
+      >
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+			</field>
+		</fieldset>
+		
+		<fieldset
+      name="section-features"
+      label="MEMBERS_SECTION_LABEL"
+      description="MEMBERS_SECTION_DESC"
+      multiple="1"
+    >
+			<field
+        name="img"
+        type="media"
+        default=""
+        label="MEMBERS_IMAGE_LABEL"
+        description="MEMBERS_IMAGE_DES"
+      />
+			<field
+        name="name-member"
+        type="text"
+        default=""
+        size="40"
+        label="MEMBERS_NAME_MEM_LABEL"
+        description="MEMBERS_NAME_MEM_DESC"
+      />
+			<field
+        name="name-office"
+        type="text"
+        default=""
+        size="40"
+        label="MEMBERS_NAME_OFFICE_LABEL"
+        description="MEMBERS_NAME_OFFICE_DESC"
+      />
+			<field
+        name="link-social"
+        type="text"
+        default=""
+        label="MEMBERS_LINK_SOCIAL_LABEL"
+        description="MEMBERS_LINK_SOCIAL_DESC"
+        rows="5"
+        cols="40"
+      />
+			<field
+        name="profile_link"
+        type="text"
+        label="Profile link"
+        description="Add a link to the article with the member's profile page"
+      />
+			<field
+        name="profile_article"
+        type="sql"
+        default="10"
+        label="Select member profile"
+        query="SELECT id, title FROM #__content WHERE `catid` = 34"
+      />
+		</fieldset>	
+  	</fields>
+</form>
