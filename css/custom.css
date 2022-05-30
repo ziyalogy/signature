@@ -1776,9 +1776,7 @@ border-radius: 50%!important;
     -webkit-border-radius: 50% !important;
     -moz-border-radius: 50%!important;
     border-radius: 50%!important;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 0px !important;
+    border-radius: 50% !important;
 }
 .contact-agent .contact-agent--cta {
     flex: auto;
